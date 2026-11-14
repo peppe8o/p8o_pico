@@ -18,10 +18,10 @@
 #               .:ox0KKKKKKK0kdc,.
 #                      ...
 #
-# Author: peppe8o
+# Author: peppe8o (Giuseppe Cassibba)
 # Blog: https://peppe8o.com
+
 # p8o-pico: single-file MicroPython utilities
-__version__ = '0.1'
 
 class LedBar:
     """Ten segments ordered highest to lowest; one resistor per segment."""
@@ -212,7 +212,7 @@ class WebLedBar(LedBar):
             server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
             server.bind(('0.0.0.0', port))
             server.listen(3)
-            print('Web server listening on http://%s:%s' % (self._wlan.ifconfig()[0], port))
+            print('Web server listening on http://%s' % (self._wlan.ifconfig()[0]))
             while True:
                 client = None
                 try:
