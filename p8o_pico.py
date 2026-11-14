@@ -105,9 +105,6 @@ class WebLedBar(LedBar):
             time.sleep_ms(200)
         self._wlan.active(True)
         log('Interface active:', self._wlan.active())
-        if not power_save:
-            self._wlan.config(pm=network.WLAN.PM_NONE)
-        log('Power saving:', 'default/current setting' if power_save else 'disabled')
         if not self._wlan.isconnected():
             log('Connecting; timeout:', timeout, 'seconds')
             try:
