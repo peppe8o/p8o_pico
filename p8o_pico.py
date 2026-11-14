@@ -190,7 +190,7 @@ class WebLedBar(LedBar):
             self._execute_command(target)
             status, body = '200 OK', 'success'
         except (ValueError, IndexError, UnicodeError):
-            status, body = '400 Bad Request', 'errore'
+            status, body = '400 Bad Request', 'error'
         response = ('HTTP/1.1 ' + status + '\r\n'
                     'Content-Type: text/plain; charset=utf-8\r\n'
                     'Content-Length: ' + str(len(body)) + '\r\n'
