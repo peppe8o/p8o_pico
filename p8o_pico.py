@@ -18,10 +18,9 @@
 #               .:ox0KKKKKKK0kdc,.
 #                      ...
 #
-# Author: peppe8o (Giuseppe Cassibba)
+# Author: peppe8o
 # Blog: https://peppe8o.com
 # p8o-pico: single-file MicroPython utilities
-
 __version__ = '0.1'
 
 class LedBar:
