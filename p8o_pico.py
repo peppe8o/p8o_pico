@@ -18,7 +18,7 @@
 #               .:ox0KKKKKKK0kdc,.
 #                      ...
 #
-# Author: peppe8o
+# Author: peppe8o (Giuseppe Cassibba)
 # Blog: https://peppe8o.com
 
 # p8o-pico: single-file MicroPython utilities
