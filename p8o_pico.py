@@ -23,6 +23,8 @@
 
 # p8o-pico: single-file MicroPython utilities
 
+__version__ = '0.1'
+
 class LedBar:
     """Ten segments ordered highest to lowest; one resistor per segment."""
     def __init__(self, pins, common_anode=True):
